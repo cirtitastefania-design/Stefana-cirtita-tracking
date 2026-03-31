@@ -3,23 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tracking Page</title>
+    <title>Express Sicilia Tracking</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Order Tracking</h1>
+        <h1>Express Sicilia Tracking Page</h1>
     </header>
     <main>
-        <section id="tracking-info">
-            <h2>Your Tracking Information</h2>
-            <p>Order Number: <span id="order-number">#123456</span></p>
-            <p>Status: <span id="order-status">In Transit</span></p>
-            <p>Estimated Delivery: <span id="estimated-delivery">2026-04-05</span></p>
+        <section class="tracking-information">
+            <h2>Tracking Information</h2>
+            <p id="tracking-number">Tracking Number: 123456789</p>
+            <div class="timeline">
+                <div class="event">
+                    <h3>Order Placed</h3>
+                    <p>2026-03-30 08:00:00 UTC</p>
+                </div>
+                <div class="event">
+                    <h3>Out for Delivery</h3>
+                    <p>2026-03-31 09:00:00 UTC</p>
+                </div>
+                <div class="event">
+                    <h3>Delivered</h3>
+                    <p>2026-03-31 11:30:00 UTC</p>
+                </div>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 100%;"></div>
+            </div>
+            <div class="delivery-info">
+                <h3>Delivery Information</h3>
+                <p>Package delivered to your front porch.</p>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2026 Tracking Company. All rights reserved.</p>
+        <p>&copy; 2026 Express Sicilia</p>
     </footer>
 </body>
 </html>
